@@ -1,0 +1,404 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400">
+<defs>
+  <!-- Backgrounds -->
+  <linearGradient id="mainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#04080f"/>
+    <stop offset="50%" stop-color="#080c14"/>
+    <stop offset="100%" stop-color="#0a0612"/>
+  </linearGradient>
+
+  <!-- Trophy cup gradients -->
+  <linearGradient id="goldCup" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FFE566"/>
+    <stop offset="40%" stop-color="#FFD700"/>
+    <stop offset="100%" stop-color="#B8860B"/>
+  </linearGradient>
+  <linearGradient id="cyanCup" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#80F0FF"/>
+    <stop offset="40%" stop-color="#00D4FF"/>
+    <stop offset="100%" stop-color="#005F80"/>
+  </linearGradient>
+  <linearGradient id="purpleCup" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#E0A0FF"/>
+    <stop offset="40%" stop-color="#BF5FFF"/>
+    <stop offset="100%" stop-color="#5A1080"/>
+  </linearGradient>
+  <linearGradient id="orangeCup" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FFB080"/>
+    <stop offset="40%" stop-color="#FF6B35"/>
+    <stop offset="100%" stop-color="#8B2500"/>
+  </linearGradient>
+  <linearGradient id="greenCup" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#80FFB8"/>
+    <stop offset="40%" stop-color="#00FF88"/>
+    <stop offset="100%" stop-color="#006633"/>
+  </linearGradient>
+  <linearGradient id="pinkCup" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FF80C0"/>
+    <stop offset="40%" stop-color="#FF0080"/>
+    <stop offset="100%" stop-color="#800040"/>
+  </linearGradient>
+
+  <!-- Pedestal gradients -->
+  <linearGradient id="goldPed" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#FFD700" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#B8860B" stop-opacity="0.1"/>
+  </linearGradient>
+  <linearGradient id="cyanPed" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#005F80" stop-opacity="0.1"/>
+  </linearGradient>
+  <linearGradient id="purplePed" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#BF5FFF" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#5A1080" stop-opacity="0.1"/>
+  </linearGradient>
+  <linearGradient id="orangePed" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#8B2500" stop-opacity="0.1"/>
+  </linearGradient>
+  <linearGradient id="greenPed" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#00FF88" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#006633" stop-opacity="0.1"/>
+  </linearGradient>
+  <linearGradient id="pinkPed" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#FF0080" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#800040" stop-opacity="0.1"/>
+  </linearGradient>
+
+  <!-- Glow filters -->
+  <filter id="gGold" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gCyan" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gPurple" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gSoft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="titleGlow" x="-20%" y="-100%" width="140%" height="300%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Dot grid pattern -->
+  <pattern id="grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.8" fill="rgba(255,215,0,0.06)"/>
+  </pattern>
+
+  <style>
+    /* ── OUTER BORDER ── */
+    .ob { animation: obCycle 5s ease-in-out infinite; }
+    @keyframes obCycle {
+      0%,100% { stroke:#FFD700; filter:drop-shadow(0 0 10px #FFD700); }
+      33%     { stroke:#00D4FF; filter:drop-shadow(0 0 10px #00D4FF); }
+      66%     { stroke:#BF5FFF; filter:drop-shadow(0 0 10px #BF5FFF); }
+    }
+
+    /* ── TITLE ── */
+    .t1 { animation: titlePulse 3s ease-in-out infinite; }
+    @keyframes titlePulse {
+      0%,100% { fill:#FFD700; filter:drop-shadow(0 0 12px #FFD700) drop-shadow(0 0 30px rgba(255,215,0,0.4)); }
+      50%     { fill:#FFF0A0; filter:drop-shadow(0 0 20px #FFD700) drop-shadow(0 0 50px rgba(255,215,0,0.6)); }
+    }
+    .t2 { animation: subtitleFade 4s ease-in-out infinite; }
+    @keyframes subtitleFade { 0%,100%{opacity:0.6} 50%{opacity:1} }
+
+    /* ── TROPHY APPEAR — each drops in from above ── */
+    .tr1 { animation: dropIn .7s 0.1s cubic-bezier(.22,1.8,.36,1) both; }
+    .tr2 { animation: dropIn .7s 0.35s cubic-bezier(.22,1.8,.36,1) both; }
+    .tr3 { animation: dropIn .7s 0.6s cubic-bezier(.22,1.8,.36,1) both; }
+    .tr4 { animation: dropIn .7s 0.85s cubic-bezier(.22,1.8,.36,1) both; }
+    .tr5 { animation: dropIn .7s 1.1s cubic-bezier(.22,1.8,.36,1) both; }
+    .tr6 { animation: dropIn .7s 1.35s cubic-bezier(.22,1.8,.36,1) both; }
+    @keyframes dropIn { from{opacity:0;transform:translateY(-40px) scale(.6)} to{opacity:1;transform:translateY(0) scale(1)} }
+
+    /* ── TROPHY FLOAT (continuous, each slightly offset) ── */
+    .fl1 { animation: float 3.0s 0.0s ease-in-out infinite; }
+    .fl2 { animation: float 3.2s 0.4s ease-in-out infinite; }
+    .fl3 { animation: float 2.9s 0.8s ease-in-out infinite; }
+    .fl4 { animation: float 3.1s 0.2s ease-in-out infinite; }
+    .fl5 { animation: float 3.3s 0.6s ease-in-out infinite; }
+    .fl6 { animation: float 2.8s 1.0s ease-in-out infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+    /* ── GLOW RINGS (pulse under trophies) ── */
+    .gr1 { animation: ringGlow 3.0s 0.0s ease-in-out infinite; }
+    .gr2 { animation: ringGlow2 3.2s 0.4s ease-in-out infinite; }
+    .gr3 { animation: ringGlow3 2.9s 0.8s ease-in-out infinite; }
+    .gr4 { animation: ringGlow4 3.1s 0.2s ease-in-out infinite; }
+    .gr5 { animation: ringGlow5 3.3s 0.6s ease-in-out infinite; }
+    .gr6 { animation: ringGlow6 2.8s 1.0s ease-in-out infinite; }
+    @keyframes ringGlow  { 0%,100%{opacity:0.3;r:22} 50%{opacity:0.8;r:28} }
+    @keyframes ringGlow2 { 0%,100%{opacity:0.3;r:22} 50%{opacity:0.8;r:28} }
+    @keyframes ringGlow3 { 0%,100%{opacity:0.3;r:22} 50%{opacity:0.8;r:28} }
+    @keyframes ringGlow4 { 0%,100%{opacity:0.3;r:22} 50%{opacity:0.8;r:28} }
+    @keyframes ringGlow5 { 0%,100%{opacity:0.3;r:22} 50%{opacity:0.8;r:28} }
+    @keyframes ringGlow6 { 0%,100%{opacity:0.3;r:22} 50%{opacity:0.8;r:28} }
+
+    /* ── STAR PARTICLES ── */
+    .sp { animation: starPop 2s ease-in-out infinite; }
+    .sp:nth-child(2n)   { animation-delay: 0.3s; }
+    .sp:nth-child(3n)   { animation-delay: 0.6s; }
+    .sp:nth-child(4n)   { animation-delay: 0.9s; }
+    .sp:nth-child(5n)   { animation-delay: 1.2s; }
+    @keyframes starPop {
+      0%,100%{ opacity:0; transform:scale(0); }
+      30%,70%{ opacity:1; transform:scale(1); }
+    }
+
+    /* ── SHINE SWEEP ── */
+    .shine { animation: shineSweep 3s ease-in-out infinite; }
+    @keyframes shineSweep { 0%{opacity:0;transform:translateX(-30px)} 30%,60%{opacity:0.6} 100%{opacity:0;transform:translateX(30px)} }
+
+    /* ── LABEL FADE ── */
+    .lbl { animation: lblFade .5s both; }
+    .lbl1{animation-delay:1.0s}.lbl2{animation-delay:1.25s}.lbl3{animation-delay:1.5s}.lbl4{animation-delay:1.75s}.lbl5{animation-delay:2.0s}.lbl6{animation-delay:2.25s}
+    @keyframes lblFade { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ── BOTTOM BAR ── */
+    .bb { animation: bbSlide 1.2s 0.5s both; }
+    @keyframes bbSlide { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ── DIVIDER SLIDE ── */
+    .dv { animation: dvSlide 1s 0.2s both; }
+    @keyframes dvSlide { from{width:0} to{width:820px} }
+  </style>
+</defs>
+
+<!-- ── BACKGROUND ── -->
+<rect width="860" height="400" fill="url(#mainBg)" rx="16"/>
+<rect width="860" height="400" fill="url(#grid)" rx="16"/>
+
+<!-- ── OUTER BORDER ── -->
+<rect class="ob" x="2" y="2" width="856" height="396" rx="15" fill="none" stroke="#FFD700" stroke-width="1.8"/>
+
+<!-- ── TITLE ── -->
+<text class="t1" x="430" y="44" font-family="'Courier New',monospace" font-size="22" font-weight="900"
+      fill="#FFD700" text-anchor="middle" letter-spacing="8" filter="url(#titleGlow)">🏆 GOD MODE AWARDS 🏆</text>
+<text class="t2" x="430" y="64" font-family="'Courier New',monospace" font-size="11"
+      fill="#8b949e" text-anchor="middle" letter-spacing="5">ABDUL-MAJEED  ·  SENIOR FULL-STACK DEVELOPER  ·  TECH-X</text>
+<rect class="dv" x="20" y="72" height="1" rx="1" fill="#FFD700" opacity="0.4"/>
+
+<!-- ════════════════════════════════════════════════════════
+     TROPHY 1 — GOD MODE DEVELOPER  (gold)  x=80
+════════════════════════════════════════════════════════ -->
+<g class="tr1">
+  <!-- glow ring -->
+  <circle class="gr1" cx="80" cy="268" r="22" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.4" filter="url(#gGold)"/>
+  <g class="fl1">
+    <!-- pedestal -->
+    <rect x="58" y="245" width="44" height="22" rx="4" fill="url(#goldPed)" stroke="#FFD700" stroke-width="0.8" opacity="0.8"/>
+    <rect x="66" y="240" width="28" height="8" rx="2" fill="url(#goldPed)" stroke="#FFD700" stroke-width="0.8" opacity="0.8"/>
+    <!-- cup body -->
+    <path d="M58,140 Q58,185 80,205 Q102,185 102,140 Z" fill="url(#goldCup)" filter="url(#gGold)"/>
+    <!-- cup rim top -->
+    <rect x="54" y="136" width="52" height="8" rx="4" fill="url(#goldCup)" filter="url(#gSoft)"/>
+    <!-- handles -->
+    <path d="M58,155 Q42,160 44,175 Q44,188 58,190" fill="none" stroke="url(#goldCup)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M102,155 Q118,160 116,175 Q116,188 102,190" fill="none" stroke="url(#goldCup)" stroke-width="6" stroke-linecap="round"/>
+    <!-- shine sweep -->
+    <path class="shine" d="M65,148 L70,200" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+    <!-- star on cup -->
+    <text x="80" y="182" font-size="22" text-anchor="middle" filter="url(#gGold)">⭐</text>
+    <!-- stem -->
+    <rect x="77" y="205" width="6" height="34" rx="2" fill="url(#goldCup)" opacity="0.9"/>
+    <!-- base -->
+    <rect x="62" y="236" width="36" height="8" rx="3" fill="url(#goldCup)" filter="url(#gSoft)"/>
+  </g>
+  <!-- particles -->
+  <circle class="sp" cx="52"  cy="145" r="3" fill="#FFD700" filter="url(#gGold)"/>
+  <circle class="sp" cx="108" cy="148" r="2" fill="#FFE566" filter="url(#gGold)"/>
+  <circle class="sp" cx="60"  cy="130" r="2" fill="#FFD700" filter="url(#gGold)"/>
+  <circle class="sp" cx="100" cy="133" r="3" fill="#FFE566" filter="url(#gGold)"/>
+  <circle class="sp" cx="80"  cy="124" r="2" fill="#FFF0A0" filter="url(#gGold)"/>
+</g>
+<text class="lbl lbl1" x="80" y="285" font-family="'Courier New',monospace" font-size="9" fill="#FFD700" text-anchor="middle" font-weight="bold" letter-spacing="1">GOD MODE</text>
+<text class="lbl lbl1" x="80" y="298" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle">DEVELOPER</text>
+
+<!-- ════════════════════════════════════════════════════════
+     TROPHY 2 — UX MASTER  (cyan)  x=220
+════════════════════════════════════════════════════════ -->
+<g class="tr2">
+  <circle class="gr2" cx="220" cy="268" r="22" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.4" filter="url(#gCyan)"/>
+  <g class="fl2">
+    <rect x="198" y="245" width="44" height="22" rx="4" fill="url(#cyanPed)" stroke="#00D4FF" stroke-width="0.8" opacity="0.8"/>
+    <rect x="206" y="240" width="28" height="8" rx="2" fill="url(#cyanPed)" stroke="#00D4FF" stroke-width="0.8" opacity="0.8"/>
+    <path d="M198,140 Q198,185 220,205 Q242,185 242,140 Z" fill="url(#cyanCup)" filter="url(#gCyan)"/>
+    <rect x="194" y="136" width="52" height="8" rx="4" fill="url(#cyanCup)" filter="url(#gSoft)"/>
+    <path d="M198,155 Q182,160 184,175 Q184,188 198,190" fill="none" stroke="url(#cyanCup)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M242,155 Q258,160 256,175 Q256,188 242,190" fill="none" stroke="url(#cyanCup)" stroke-width="6" stroke-linecap="round"/>
+    <path class="shine" d="M205,148 L210,200" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+    <text x="220" y="182" font-size="22" text-anchor="middle" filter="url(#gCyan)">🎨</text>
+    <rect x="217" y="205" width="6" height="34" rx="2" fill="url(#cyanCup)" opacity="0.9"/>
+    <rect x="202" y="236" width="36" height="8" rx="3" fill="url(#cyanCup)" filter="url(#gSoft)"/>
+  </g>
+  <circle class="sp" cx="192" cy="145" r="3" fill="#00D4FF" filter="url(#gCyan)"/>
+  <circle class="sp" cx="248" cy="148" r="2" fill="#80F0FF" filter="url(#gCyan)"/>
+  <circle class="sp" cx="200" cy="130" r="2" fill="#00D4FF" filter="url(#gCyan)"/>
+  <circle class="sp" cx="240" cy="133" r="3" fill="#80F0FF" filter="url(#gCyan)"/>
+  <circle class="sp" cx="220" cy="124" r="2" fill="#00FFFF" filter="url(#gCyan)"/>
+</g>
+<text class="lbl lbl2" x="220" y="285" font-family="'Courier New',monospace" font-size="9" fill="#00D4FF" text-anchor="middle" font-weight="bold" letter-spacing="1">UX MASTER</text>
+<text class="lbl lbl2" x="220" y="298" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle">DESIGNER</text>
+
+<!-- ════════════════════════════════════════════════════════
+     TROPHY 3 — FULL STACK GOD  (purple)  x=360
+════════════════════════════════════════════════════════ -->
+<g class="tr3">
+  <circle class="gr3" cx="360" cy="268" r="22" fill="none" stroke="#BF5FFF" stroke-width="1.5" opacity="0.4" filter="url(#gPurple)"/>
+  <g class="fl3">
+    <rect x="338" y="245" width="44" height="22" rx="4" fill="url(#purplePed)" stroke="#BF5FFF" stroke-width="0.8" opacity="0.8"/>
+    <rect x="346" y="240" width="28" height="8" rx="2" fill="url(#purplePed)" stroke="#BF5FFF" stroke-width="0.8" opacity="0.8"/>
+    <path d="M338,140 Q338,185 360,205 Q382,185 382,140 Z" fill="url(#purpleCup)" filter="url(#gPurple)"/>
+    <rect x="334" y="136" width="52" height="8" rx="4" fill="url(#purpleCup)" filter="url(#gSoft)"/>
+    <path d="M338,155 Q322,160 324,175 Q324,188 338,190" fill="none" stroke="url(#purpleCup)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M382,155 Q398,160 396,175 Q396,188 382,190" fill="none" stroke="url(#purpleCup)" stroke-width="6" stroke-linecap="round"/>
+    <path class="shine" d="M345,148 L350,200" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+    <text x="360" y="182" font-size="22" text-anchor="middle" filter="url(#gPurple)">⚡</text>
+    <rect x="357" y="205" width="6" height="34" rx="2" fill="url(#purpleCup)" opacity="0.9"/>
+    <rect x="342" y="236" width="36" height="8" rx="3" fill="url(#purpleCup)" filter="url(#gSoft)"/>
+  </g>
+  <circle class="sp" cx="332" cy="145" r="3" fill="#BF5FFF" filter="url(#gPurple)"/>
+  <circle class="sp" cx="388" cy="148" r="2" fill="#E0A0FF" filter="url(#gPurple)"/>
+  <circle class="sp" cx="340" cy="130" r="2" fill="#BF5FFF" filter="url(#gPurple)"/>
+  <circle class="sp" cx="380" cy="133" r="3" fill="#E0A0FF" filter="url(#gPurple)"/>
+  <circle class="sp" cx="360" cy="124" r="2" fill="#FF80FF" filter="url(#gPurple)"/>
+</g>
+<text class="lbl lbl3" x="360" y="285" font-family="'Courier New',monospace" font-size="9" fill="#BF5FFF" text-anchor="middle" font-weight="bold" letter-spacing="1">FULL-STACK</text>
+<text class="lbl lbl3" x="360" y="298" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle">ARCHITECT</text>
+
+<!-- ════════════════════════════════════════════════════════
+     TROPHY 4 — MOBILE PIONEER  (orange)  x=500
+════════════════════════════════════════════════════════ -->
+<g class="tr4">
+  <circle class="gr4" cx="500" cy="268" r="22" fill="none" stroke="#FF6B35" stroke-width="1.5" opacity="0.4"/>
+  <g class="fl4">
+    <rect x="478" y="245" width="44" height="22" rx="4" fill="url(#orangePed)" stroke="#FF6B35" stroke-width="0.8" opacity="0.8"/>
+    <rect x="486" y="240" width="28" height="8" rx="2" fill="url(#orangePed)" stroke="#FF6B35" stroke-width="0.8" opacity="0.8"/>
+    <path d="M478,140 Q478,185 500,205 Q522,185 522,140 Z" fill="url(#orangeCup)"/>
+    <rect x="474" y="136" width="52" height="8" rx="4" fill="url(#orangeCup)" filter="url(#gSoft)"/>
+    <path d="M478,155 Q462,160 464,175 Q464,188 478,190" fill="none" stroke="url(#orangeCup)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M522,155 Q538,160 536,175 Q536,188 522,190" fill="none" stroke="url(#orangeCup)" stroke-width="6" stroke-linecap="round"/>
+    <path class="shine" d="M485,148 L490,200" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+    <text x="500" y="182" font-size="22" text-anchor="middle">📱</text>
+    <rect x="497" y="205" width="6" height="34" rx="2" fill="url(#orangeCup)" opacity="0.9"/>
+    <rect x="482" y="236" width="36" height="8" rx="3" fill="url(#orangeCup)" filter="url(#gSoft)"/>
+  </g>
+  <circle class="sp" cx="472" cy="145" r="3" fill="#FF6B35"/>
+  <circle class="sp" cx="528" cy="148" r="2" fill="#FFB080"/>
+  <circle class="sp" cx="480" cy="130" r="2" fill="#FF6B35"/>
+  <circle class="sp" cx="520" cy="133" r="3" fill="#FFB080"/>
+  <circle class="sp" cx="500" cy="124" r="2" fill="#FFAA60"/>
+</g>
+<text class="lbl lbl4" x="500" y="285" font-family="'Courier New',monospace" font-size="9" fill="#FF6B35" text-anchor="middle" font-weight="bold" letter-spacing="1">MOBILE</text>
+<text class="lbl lbl4" x="500" y="298" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle">PIONEER</text>
+
+<!-- ════════════════════════════════════════════════════════
+     TROPHY 5 — OPEN SOURCE HERO  (green)  x=640
+════════════════════════════════════════════════════════ -->
+<g class="tr5">
+  <circle class="gr5" cx="640" cy="268" r="22" fill="none" stroke="#00FF88" stroke-width="1.5" opacity="0.4"/>
+  <g class="fl5">
+    <rect x="618" y="245" width="44" height="22" rx="4" fill="url(#greenPed)" stroke="#00FF88" stroke-width="0.8" opacity="0.8"/>
+    <rect x="626" y="240" width="28" height="8" rx="2" fill="url(#greenPed)" stroke="#00FF88" stroke-width="0.8" opacity="0.8"/>
+    <path d="M618,140 Q618,185 640,205 Q662,185 662,140 Z" fill="url(#greenCup)"/>
+    <rect x="614" y="136" width="52" height="8" rx="4" fill="url(#greenCup)" filter="url(#gSoft)"/>
+    <path d="M618,155 Q602,160 604,175 Q604,188 618,190" fill="none" stroke="url(#greenCup)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M662,155 Q678,160 676,175 Q676,188 662,190" fill="none" stroke="url(#greenCup)" stroke-width="6" stroke-linecap="round"/>
+    <path class="shine" d="M625,148 L630,200" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+    <text x="640" y="182" font-size="22" text-anchor="middle">🌍</text>
+    <rect x="637" y="205" width="6" height="34" rx="2" fill="url(#greenCup)" opacity="0.9"/>
+    <rect x="622" y="236" width="36" height="8" rx="3" fill="url(#greenCup)" filter="url(#gSoft)"/>
+  </g>
+  <circle class="sp" cx="612" cy="145" r="3" fill="#00FF88"/>
+  <circle class="sp" cx="668" cy="148" r="2" fill="#80FFB8"/>
+  <circle class="sp" cx="620" cy="130" r="2" fill="#00FF88"/>
+  <circle class="sp" cx="660" cy="133" r="3" fill="#80FFB8"/>
+  <circle class="sp" cx="640" cy="124" r="2" fill="#A0FFD0"/>
+</g>
+<text class="lbl lbl5" x="640" y="285" font-family="'Courier New',monospace" font-size="9" fill="#00FF88" text-anchor="middle" font-weight="bold" letter-spacing="1">OPEN SOURCE</text>
+<text class="lbl lbl5" x="640" y="298" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle">HERO</text>
+
+<!-- ════════════════════════════════════════════════════════
+     TROPHY 6 — INNOVATOR ELITE  (pink)  x=780
+════════════════════════════════════════════════════════ -->
+<g class="tr6">
+  <circle class="gr6" cx="780" cy="268" r="22" fill="none" stroke="#FF0080" stroke-width="1.5" opacity="0.4"/>
+  <g class="fl6">
+    <rect x="758" y="245" width="44" height="22" rx="4" fill="url(#pinkPed)" stroke="#FF0080" stroke-width="0.8" opacity="0.8"/>
+    <rect x="766" y="240" width="28" height="8" rx="2" fill="url(#pinkPed)" stroke="#FF0080" stroke-width="0.8" opacity="0.8"/>
+    <path d="M758,140 Q758,185 780,205 Q802,185 802,140 Z" fill="url(#pinkCup)"/>
+    <rect x="754" y="136" width="52" height="8" rx="4" fill="url(#pinkCup)" filter="url(#gSoft)"/>
+    <path d="M758,155 Q742,160 744,175 Q744,188 758,190" fill="none" stroke="url(#pinkCup)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M802,155 Q818,160 816,175 Q816,188 802,190" fill="none" stroke="url(#pinkCup)" stroke-width="6" stroke-linecap="round"/>
+    <path class="shine" d="M765,148 L770,200" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+    <text x="780" y="182" font-size="22" text-anchor="middle">🚀</text>
+    <rect x="777" y="205" width="6" height="34" rx="2" fill="url(#pinkCup)" opacity="0.9"/>
+    <rect x="762" y="236" width="36" height="8" rx="3" fill="url(#pinkCup)" filter="url(#gSoft)"/>
+  </g>
+  <circle class="sp" cx="752" cy="145" r="3" fill="#FF0080"/>
+  <circle class="sp" cx="808" cy="148" r="2" fill="#FF80C0"/>
+  <circle class="sp" cx="760" cy="130" r="2" fill="#FF0080"/>
+  <circle class="sp" cx="800" cy="133" r="3" fill="#FF80C0"/>
+  <circle class="sp" cx="780" cy="124" r="2" fill="#FF60B0"/>
+</g>
+<text class="lbl lbl6" x="780" y="285" font-family="'Courier New',monospace" font-size="9" fill="#FF0080" text-anchor="middle" font-weight="bold" letter-spacing="1">INNOVATOR</text>
+<text class="lbl lbl6" x="780" y="298" font-family="'Courier New',monospace" font-size="8" fill="#8b949e" text-anchor="middle">ELITE</text>
+
+<!-- ════════════════════════════════════════════════════════
+     BOTTOM STATUS BAR
+════════════════════════════════════════════════════════ -->
+<g class="bb">
+  <rect x="2" y="316" width="856" height="1" fill="#FFD700" opacity="0.2"/>
+  <rect x="2" y="316" width="856" height="82" fill="#04080f" opacity="0.8"/>
+  <rect x="2" y="396" width="856" height="2" rx="14" fill="#FFD700" opacity="0.3"/>
+
+  <!-- Award badge row -->
+  <!-- Badge 1 -->
+  <rect x="20" y="328" width="130" height="58" rx="8" fill="#0d1117" stroke="#FFD700" stroke-width="0.8" opacity="0.9"/>
+  <text x="85" y="348" font-family="'Courier New',monospace" font-size="16" text-anchor="middle">🥇</text>
+  <text x="85" y="364" font-family="'Courier New',monospace" font-size="8" fill="#FFD700" text-anchor="middle" letter-spacing="1">AWARD WINNING</text>
+  <text x="85" y="376" font-family="'Courier New',monospace" font-size="7" fill="#8b949e" text-anchor="middle">Recognized Excellence</text>
+
+  <!-- Badge 2 -->
+  <rect x="165" y="328" width="130" height="58" rx="8" fill="#0d1117" stroke="#00D4FF" stroke-width="0.8" opacity="0.9"/>
+  <text x="230" y="348" font-family="'Courier New',monospace" font-size="16" text-anchor="middle">💎</text>
+  <text x="230" y="364" font-family="'Courier New',monospace" font-size="8" fill="#00D4FF" text-anchor="middle" letter-spacing="1">5+ YEARS XP</text>
+  <text x="230" y="376" font-family="'Courier New',monospace" font-size="7" fill="#8b949e" text-anchor="middle">Professional Journey</text>
+
+  <!-- Badge 3 -->
+  <rect x="310" y="328" width="130" height="58" rx="8" fill="#0d1117" stroke="#BF5FFF" stroke-width="0.8" opacity="0.9"/>
+  <text x="375" y="348" font-family="'Courier New',monospace" font-size="16" text-anchor="middle">⚡</text>
+  <text x="375" y="364" font-family="'Courier New',monospace" font-size="8" fill="#BF5FFF" text-anchor="middle" letter-spacing="1">TECH-X FOUNDER</text>
+  <text x="375" y="376" font-family="'Courier New',monospace" font-size="7" fill="#8b949e" text-anchor="middle">Tanzania · East Africa</text>
+
+  <!-- Badge 4 -->
+  <rect x="455" y="328" width="130" height="58" rx="8" fill="#0d1117" stroke="#FF6B35" stroke-width="0.8" opacity="0.9"/>
+  <text x="520" y="348" font-family="'Courier New',monospace" font-size="16" text-anchor="middle">🔥</text>
+  <text x="520" y="364" font-family="'Courier New',monospace" font-size="8" fill="#FF6B35" text-anchor="middle" letter-spacing="1">MOBILE FIRST</text>
+  <text x="520" y="376" font-family="'Courier New',monospace" font-size="7" fill="#8b949e" text-anchor="middle">React · Capacitor · Android</text>
+
+  <!-- Badge 5 -->
+  <rect x="600" y="328" width="130" height="58" rx="8" fill="#0d1117" stroke="#00FF88" stroke-width="0.8" opacity="0.9"/>
+  <text x="665" y="348" font-family="'Courier New',monospace" font-size="16" text-anchor="middle">🌍</text>
+  <text x="665" y="364" font-family="'Courier New',monospace" font-size="8" fill="#00FF88" text-anchor="middle" letter-spacing="1">BUILT FOR WORLD</text>
+  <text x="665" y="376" font-family="'Courier New',monospace" font-size="7" fill="#8b949e" text-anchor="middle">Global Impact</text>
+
+  <!-- Badge 6 -->
+  <rect x="745" y="328" width="100" height="58" rx="8" fill="#0d1117" stroke="#FF0080" stroke-width="0.8" opacity="0.9"/>
+  <text x="795" y="348" font-family="'Courier New',monospace" font-size="16" text-anchor="middle">🚀</text>
+  <text x="795" y="364" font-family="'Courier New',monospace" font-size="8" fill="#FF0080" text-anchor="middle" letter-spacing="1">INNOVATOR</text>
+  <text x="795" y="376" font-family="'Courier New',monospace" font-size="7" fill="#8b949e" text-anchor="middle">Always Shipping</text>
+</g>
+
+<!-- Corner accent lines -->
+<line x1="2" y1="82" x2="30" y2="82" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+<line x1="830" y1="82" x2="858" y2="82" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+</svg>
