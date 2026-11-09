@@ -31,33 +31,11 @@
 <!--                    WHO AM I — TERMINAL                     -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+<div align="center">
 
-```ansi
-╔══════════════════════════════════════════════════════════════════════╗
-║  [0;36m▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[0m  ║
-║  [0;36m                  ABDUL-MAJEED  @  TERMINAL                          [0m  ║
-║  [0;36m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[0m  ║
-╠══════════════════════════════════════════════════════════════════════╣
-║                                                                      ║
-║   $ whoami                                                           ║
-║   > [0;32mABDUL-MAJEED[0m  —  Designer. Builder. Visionary.                   ║
-║                                                                      ║
-║   $ cat /etc/identity                                                ║
-║   > [0;33mLocation  :[0m  Tanzania  🇹🇿                                        ║
-║   > [0;33mCompany   :[0m  Tech-X  —  tech-x.co.tz                             ║
-║   > [0;33mCraft     :[0m  UX/UI · Mobile · Web · Brand Systems               ║
-║   > [0;33mStack     :[0m  React · TypeScript · Firebase · Capacitor           ║
-║   > [0;33mPhilosophy:[0m  "The Quieter You Become, The More You Hear"         ║
-║                                                                      ║
-║   $ uptime                                                           ║
-║   > [0;32mYears of experience: ∞[0m                                            ║
-║   > [0;32mPassion level      : MAXIMUM[0m                                      ║
-║   > [0;32mStatus             : BUILDING[0m]                                    ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
+[![terminal](https://raw.githubusercontent.com/Akhymajeed/akhymajeed/main/terminal.svg)](https://github.com/Akhymajeed)
 
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+</div>
 
 ---
 
