@@ -146,7 +146,7 @@
   <rect x="20" y="68" width="175" height="100" rx="10" fill="url(#card1)"/>
   <rect class="card-border-1" x="20" y="68" width="175" height="100" rx="10" fill="none" stroke="#00D4FF" stroke-width="1"/>
   <text x="107" y="104" font-family="'Courier New',monospace" font-size="11" fill="#8b949e" text-anchor="middle" letter-spacing="2">REPOSITORIES</text>
-  <text class="n1" x="107" y="148" font-family="'Courier New',monospace" font-size="36" font-weight="900" fill="#00D4FF" text-anchor="middle" filter="url(#gCyan)">9</text>
+  <text class="n1" x="107" y="148" font-family="'Courier New',monospace" font-size="30" font-weight="900" fill="#00D4FF" text-anchor="middle" filter="url(#gCyan)">200</text>
 </g>
 
 <!-- Card 2 — Projects -->
@@ -154,7 +154,7 @@
   <rect x="210" y="68" width="175" height="100" rx="10" fill="url(#card1)"/>
   <rect class="card-border-2" x="210" y="68" width="175" height="100" rx="10" fill="none" stroke="#BF5FFF" stroke-width="1"/>
   <text x="297" y="104" font-family="'Courier New',monospace" font-size="11" fill="#8b949e" text-anchor="middle" letter-spacing="2">PROJECTS</text>
-  <text class="n2" x="297" y="148" font-family="'Courier New',monospace" font-size="36" font-weight="900" fill="#BF5FFF" text-anchor="middle" filter="url(#gPurple)">6+</text>
+  <text class="n2" x="297" y="148" font-family="'Courier New',monospace" font-size="30" font-weight="900" fill="#BF5FFF" text-anchor="middle" filter="url(#gPurple)">200+</text>
 </g>
 
 <!-- Card 3 — Experience -->
