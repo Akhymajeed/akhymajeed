@@ -4,7 +4,7 @@
 <!--                  ANIMATED HEADER BANNER                    -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-[![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,30:0A0A2E,60:0D1B4B,80:003366,100:00D4FF&height=280&section=header&text=AKHYMAJEED&fontSize=80&fontColor=00D4FF&fontAlignY=38&desc=Designer%20·%20Builder%20·%20Founder&descAlignY=58&descSize=22&descColor=ffffff&animation=fadeIn&stroke=00D4FF&strokeWidth=2)](https://github.com/Akhymajeed)
+[![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,30:0A0A2E,60:0D1B4B,80:003366,100:00D4FF&height=280&section=header&text=ABDUL-MAJEED&fontSize=80&fontColor=00D4FF&fontAlignY=38&desc=Designer%20·%20Builder%20·%20Founder&descAlignY=58&descSize=22&descColor=ffffff&animation=fadeIn&stroke=00D4FF&strokeWidth=2)](https://github.com/Akhymajeed)
 
 <!-- MULTI-LINE TYPING ANIMATION -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=26&duration=2800&pause=600&color=00D4FF&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=60&lines=UX+%2F+UI+Designer+of+Eternity+✦;Full-Stack+Engineer+%7C+Tech-X;Crafting+Digital+Experiences+Since+Day+1;Tanzania+🇹🇿+%7C+Building+the+Future;Every+Pixel+is+Intentional+⚡;The+Quieter+You+Become+...)](https://github.com/Akhymajeed)
@@ -36,7 +36,7 @@
 ```ansi
 ╔══════════════════════════════════════════════════════════════════════╗
 ║  [0;36m▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[0m  ║
-║  [0;36m                  AKHYMAJEED  @  TERMINAL                          [0m  ║
+║  [0;36m                  ABDUL-MAJEED  @  TERMINAL                          [0m  ║
 ║  [0;36m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[0m  ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                      ║
@@ -230,6 +230,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=400&size=16&duration=4000&pause=2000&color=FFD700&center=true&vCenter=true&width=700&lines=%22The+Quieter+You+Become%2C+The+More+You+Are+Able+To+Hear.%22;%22Design+is+not+decoration+—+it+is+clarity+made+visible.%22;%22Every+interface+I+build+tells+a+story.%22;%22Built+different.+From+Tanzania.+For+the+World.%22)](https://github.com/Akhymajeed)
 
 <!-- ANIMATED FOOTER WAVE -->
-[![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,30:BF5FFF,60:FF6B35,80:FFD700,100:0d1117&height=180&section=footer&text=AKHYMAJEED&fontSize=50&fontColor=ffffff&fontAlignY=65&animation=fadeIn)](https://github.com/Akhymajeed)
+[![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,30:BF5FFF,60:FF6B35,80:FFD700,100:0d1117&height=180&section=footer&text=ABDUL-MAJEED&fontSize=50&fontColor=ffffff&fontAlignY=65&animation=fadeIn)](https://github.com/Akhymajeed)
 
 </div>
