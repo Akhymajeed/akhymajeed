@@ -208,9 +208,7 @@
 <br><br>
 
 <!-- ANIMATED VISITOR COUNTER -->
-<img src="https://komarev.com/ghpvc/?username=Akhymajeed&color=00D4FF&style=for-the-badge&label=PROFILE+VIEWS&base=1000" />
-&nbsp;
-![](https://img.shields.io/github/followers/Akhymajeed?style=for-the-badge&logo=github&color=BF5FFF&labelColor=0d1117&label=FOLLOWERS)
+<img src="https://komarev.com/ghpvc/?username=Akhymajeed&color=00D4FF&style=for-the-badge&label=PROFILE+VIEWS&base=1000" />&nbsp;&nbsp;<img src="https://img.shields.io/github/followers/Akhymajeed?style=for-the-badge&logo=github&color=BF5FFF&labelColor=0d1117&label=FOLLOWERS" />
 
 </div>
 
