@@ -94,17 +94,17 @@
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!--               ANIMATED CONTRIBUTION SNAKE                  -->
 <!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--               ANIMATED CONTRIBUTION SNAKE                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
 ## 🐍 CONTRIBUTION SNAKE
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Akhymajeed/Akhymajeed/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Akhymajeed/Akhymajeed/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Akhymajeed/Akhymajeed/output/github-contribution-grid-snake-dark.svg">
-</picture>
+[![snake](https://raw.githubusercontent.com/Akhymajeed/akhymajeed/main/snake_custom.svg)](https://github.com/Akhymajeed)
 
+</div>
 </div>
 
 ---
