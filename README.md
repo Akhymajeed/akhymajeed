@@ -106,28 +106,9 @@
 
 ## 📊 GITHUB PULSE
 
-<img src="https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif" width="500">
-
-<br>
-
-<!-- STATS CARD — NEON CYAN -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Akhymajeed&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D4FF&icon_color=BF5FFF&text_color=c9d1d9&ring_color=00D4FF&border_radius=12&count_private=true"/>
-
-<!-- TOP LANGS — NEON PURPLE -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akhymajeed&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BF5FFF&text_color=c9d1d9&border_radius=12&langs_count=8"/>
-
-<br><br>
-
-<!-- STREAK — FIRE ORANGE -->
-<img src="https://streak-stats.demolab.com/?user=Akhymajeed&theme=tokyonight&hide_border=true&background=0d1117&stroke=00D4FF&ring=BF5FFF&fire=FF6B35&currStreakLabel=00D4FF&sideLabels=FFD700&dates=8b949e&border_radius=12" width="500"/>
-
-<br><br>
-
-<!-- ACTIVITY GRAPH — NEON GREEN -->
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Akhymajeed&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00D4FF&line=BF5FFF&point=FF6B35&area=true&area_color=00D4FF&radius=12)](https://github.com/Akhymajeed)
+[![pulse](https://raw.githubusercontent.com/Akhymajeed/akhymajeed/main/pulse.svg)](https://github.com/Akhymajeed)
 
 </div>
-
 ---
 
 <!-- ═══════════════════════════════════════════════════════════ -->
