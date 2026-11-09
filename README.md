@@ -76,26 +76,6 @@
 
 [![wave](https://capsule-render.vercel.app/api?type=soft&color=0:BF5FFF,50:00D4FF,100:00FF88&height=80&section=header&reversal=false&fontSize=0)](https://github.com/Akhymajeed)
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!--                   FEATURED PROJECTS                        -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-## 🚀 FEATURED WORK
-
-</div>
-
-<div align="center">
-
-[![Batashy](https://github-readme-stats.vercel.app/api/pin/?username=Akhymajeed&repo=Batashy-Washing-Services&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D4FF&icon_color=BF5FFF&text_color=ffffff&border_radius=12)](https://github.com/Akhymajeed/Batashy-Washing-Services)
-[![UjijiAdventure](https://github-readme-stats.vercel.app/api/pin/?username=Akhymajeed&repo=UjijiAdventure&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=FF6B35&icon_color=FFD700&text_color=ffffff&border_radius=12)](https://github.com/Akhymajeed/UjijiAdventure)
-
-[![CITT](https://github-readme-stats.vercel.app/api/pin/?username=Akhymajeed&repo=CITT&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00FF88&icon_color=00D4FF&text_color=ffffff&border_radius=12)](https://github.com/Akhymajeed/CITT)
-[![AiWebsite](https://github-readme-stats.vercel.app/api/pin/?username=Akhymajeed&repo=AiWebsiteV1&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=BF5FFF&icon_color=FF6B35&text_color=ffffff&border_radius=12)](https://github.com/Akhymajeed/AiWebsiteV1)
-
-</div>
-
 ---
 
 <!-- ═══════════════════════════════════════════════════════════ -->
