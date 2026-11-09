@@ -112,12 +112,9 @@
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!--                    TROPHIES                                -->
 <!-- ═══════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-## 🏆 TROPHIES
-
-[![Trophies](https://github-profile-trophy.vercel.app/?username=Akhymajeed&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7)](https://github.com/Akhymajeed)
+[![trophies](https://raw.githubusercontent.com/Akhymajeed/akhymajeed/main/trophies.svg)](https://github.com/Akhymajeed)
 
 </div>
 
