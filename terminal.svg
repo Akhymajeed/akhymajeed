@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <!-- Cyan glow filter -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="800" height="3" patternUnits="userSpaceOnUse">
+      <rect width="800" height="1" fill="rgba(0,212,255,0.03)"/>
+    </pattern>
+    <!-- Border glow -->
+    <filter id="borderGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- ── TYPEWRITER ANIMATIONS ── -->
+    <!-- Line 1: $ whoami  (delay 0.3s) -->
+    <style>
+      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+
+      .cur { animation: blink 1s step-end infinite; fill:#00D4FF; }
+
+      /* Each text line fades in at its cue */
+      .l1  { animation: fadeIn 0.1s 0.4s both; }
+      .l2  { animation: fadeIn 0.1s 1.0s both; }
+      .l3  { animation: fadeIn 0.1s 1.8s both; }
+      .l4  { animation: fadeIn 0.1s 2.4s both; }
+      .l5  { animation: fadeIn 0.1s 2.9s both; }
+      .l6  { animation: fadeIn 0.1s 3.4s both; }
+      .l7  { animation: fadeIn 0.1s 3.9s both; }
+      .l8  { animation: fadeIn 0.1s 4.4s both; }
+      .l9  { animation: fadeIn 0.1s 4.9s both; }
+      .l10 { animation: fadeIn 0.1s 5.4s both; }
+      .l11 { animation: fadeIn 0.1s 5.9s both; }
+      .l12 { animation: fadeIn 0.1s 6.4s both; }
+      .l13 { animation: fadeIn 0.1s 7.0s both; }
+      .l14 { animation: fadeIn 0.1s 7.5s both; }
+      .l15 { animation: fadeIn 0.1s 8.0s both; }
+      .l16 { animation: fadeIn 0.1s 8.6s both; }
+
+      @keyframes fadeIn { from{opacity:0; transform:translateX(-8px)} to{opacity:1; transform:translateX(0)} }
+
+      /* Border glow pulse */
+      .border-rect { animation: borderPulse 3s ease-in-out infinite; }
+      @keyframes borderPulse {
+        0%,100% { stroke:#00D4FF; filter:drop-shadow(0 0 6px #00D4FF); }
+        50%      { stroke:#BF5FFF; filter:drop-shadow(0 0 14px #BF5FFF); }
+      }
+
+      /* Title bar scan */
+      .title-bar { animation: titleShimmer 4s ease-in-out infinite; }
+      @keyframes titleShimmer {
+        0%,100% { fill:#0f1a2e; }
+        50%      { fill:#121e36; }
+      }
+
+      /* Cursor blink for last line */
+      .cursor-bar { animation: blink 1s step-end infinite; }
+    </style>
+  </defs>
+
+  <!-- ── OUTER SHELL ── -->
+  <rect width="800" height="460" fill="url(#bgGrad)" rx="12"/>
+  <rect width="800" height="460" fill="url(#scanlines)" rx="12" opacity="0.6"/>
+
+  <!-- ── GLOWING BORDER ── -->
+  <rect class="border-rect" x="2" y="2" width="796" height="456" rx="11"
+        fill="none" stroke="#00D4FF" stroke-width="1.5"
+        style="filter:drop-shadow(0 0 8px #00D4FF)"/>
+
+  <!-- ── TITLE BAR ── -->
+  <rect class="title-bar" x="2" y="2" width="796" height="36" rx="11" fill="#0f1a2e"/>
+  <rect x="2" y="26" width="796" height="12" fill="#0f1a2e"/>
+  <rect x="2" y="36" width="796" height="2" fill="#00D4FF" opacity="0.4"/>
+
+  <!-- Traffic lights -->
+  <circle cx="28" cy="20" r="6" fill="#FF5F57"/>
+  <circle cx="48" cy="20" r="6" fill="#FFBD2E"/>
+  <circle cx="68" cy="20" r="6" fill="#28CA41"/>
+
+  <!-- Title text -->
+  <text x="400" y="24" font-family="'Courier New',monospace" font-size="13" font-weight="bold"
+        fill="#00D4FF" text-anchor="middle" style="filter:drop-shadow(0 0 6px #00D4FF)">
+    abdul-majeed@terminal: ~
+  </text>
+
+  <!-- ── CONTENT AREA ── -->
+  <!-- Subtle inner bg -->
+  <rect x="2" y="38" width="796" height="420" fill="#080c14" rx="0"/>
+  <rect x="2" y="38" width="796" height="420" fill="url(#scanlines)" opacity="0.4"/>
+
+  <!-- ══ LINES ══ -->
+  <!-- l1: prompt $ whoami -->
+  <text class="l1" x="30" y="75" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">$</text>
+  <text class="l1" x="45" y="75" font-family="'Courier New',monospace" font-size="13.5" fill="#00D4FF" font-weight="bold">whoami</text>
+
+  <!-- l2: > ABDUL-MAJEED -->
+  <text class="l2" x="30" y="98" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l2" x="45" y="98" font-family="'Courier New',monospace" font-size="13.5" fill="#00FF88" font-weight="bold">ABDUL-MAJEED</text>
+  <text class="l2" x="185" y="98" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e"> — Designer. Builder. Visionary.</text>
+
+  <!-- l3: blank + prompt cat -->
+  <text class="l3" x="30" y="128" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">$</text>
+  <text class="l3" x="45" y="128" font-family="'Courier New',monospace" font-size="13.5" fill="#00D4FF" font-weight="bold">cat /etc/identity</text>
+
+  <!-- l4: Location -->
+  <text class="l4" x="30" y="152" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l4" x="45" y="152" font-family="'Courier New',monospace" font-size="13.5" fill="#FFD700">Location  :</text>
+  <text class="l4" x="160" y="152" font-family="'Courier New',monospace" font-size="13.5" fill="#e6edf3">  Tanzania 🇹🇿</text>
+
+  <!-- l5: Company -->
+  <text class="l5" x="30" y="173" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l5" x="45" y="173" font-family="'Courier New',monospace" font-size="13.5" fill="#FFD700">Company   :</text>
+  <text class="l5" x="160" y="173" font-family="'Courier New',monospace" font-size="13.5" fill="#e6edf3">  Tech-X — tech-x.co.tz</text>
+
+  <!-- l6: Craft -->
+  <text class="l6" x="30" y="194" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l6" x="45" y="194" font-family="'Courier New',monospace" font-size="13.5" fill="#FFD700">Craft     :</text>
+  <text class="l6" x="160" y="194" font-family="'Courier New',monospace" font-size="13.5" fill="#e6edf3">  UX/UI · Mobile · Web · Brand Systems</text>
+
+  <!-- l7: Stack -->
+  <text class="l7" x="30" y="215" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l7" x="45" y="215" font-family="'Courier New',monospace" font-size="13.5" fill="#FFD700">Stack     :</text>
+  <text class="l7" x="160" y="215" font-family="'Courier New',monospace" font-size="13.5" fill="#e6edf3">  React · TypeScript · Firebase · Capacitor</text>
+
+  <!-- l8: Philosophy -->
+  <text class="l8" x="30" y="236" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l8" x="45" y="236" font-family="'Courier New',monospace" font-size="13.5" fill="#FFD700">Philosophy:</text>
+  <text class="l8" x="160" y="236" font-family="'Courier New',monospace" font-size="13.5" fill="#BF5FFF" font-style="italic">  "The Quieter You Become, The More You Hear"</text>
+
+  <!-- l9: uptime prompt -->
+  <text class="l9" x="30" y="266" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">$</text>
+  <text class="l9" x="45" y="266" font-family="'Courier New',monospace" font-size="13.5" fill="#00D4FF" font-weight="bold">uptime</text>
+
+  <!-- l10: experience -->
+  <text class="l10" x="30" y="289" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l10" x="45" y="289" font-family="'Courier New',monospace" font-size="13.5" fill="#FF6B35">Experience :</text>
+  <text class="l10" x="170" y="289" font-family="'Courier New',monospace" font-size="13.5" fill="#00FF88" font-weight="bold">  ∞ years</text>
+
+  <!-- l11: passion -->
+  <text class="l11" x="30" y="310" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l11" x="45" y="310" font-family="'Courier New',monospace" font-size="13.5" fill="#FF6B35">Passion    :</text>
+  <text class="l11" x="170" y="310" font-family="'Courier New',monospace" font-size="13.5" fill="#00FF88" font-weight="bold">  MAXIMUM 🔥</text>
+
+  <!-- l12: status -->
+  <text class="l12" x="30" y="331" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">›</text>
+  <text class="l12" x="45" y="331" font-family="'Courier New',monospace" font-size="13.5" fill="#FF6B35">Status     :</text>
+  <text class="l12" x="170" y="331" font-family="'Courier New',monospace" font-size="13.5" fill="#00FF88" font-weight="bold">  BUILDING ⚡</text>
+
+  <!-- l13: git status prompt -->
+  <text class="l13" x="30" y="361" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">$</text>
+  <text class="l13" x="45" y="361" font-family="'Courier New',monospace" font-size="13.5" fill="#00D4FF" font-weight="bold">git log --oneline --all</text>
+
+  <!-- l14 -->
+  <text class="l14" x="30" y="382" font-family="'Courier New',monospace" font-size="12.5" fill="#8b949e">a3f2c1d</text>
+  <text class="l14" x="105" y="382" font-family="'Courier New',monospace" font-size="12.5" fill="#FFD700">(HEAD → main)</text>
+  <text class="l14" x="220" y="382" font-family="'Courier New',monospace" font-size="12.5" fill="#e6edf3"> feat: Batashy Washing Services v2.0</text>
+
+  <!-- l15 -->
+  <text class="l15" x="30" y="401" font-family="'Courier New',monospace" font-size="12.5" fill="#8b949e">b7e9f12</text>
+  <text class="l15" x="105" y="401" font-family="'Courier New',monospace" font-size="12.5" fill="#e6edf3"> feat: CITT Smart Navigation System</text>
+
+  <!-- l16: blinking prompt -->
+  <text class="l16" x="30" y="430" font-family="'Courier New',monospace" font-size="13.5" fill="#8b949e">$</text>
+  <text class="l16" x="45" y="430" font-family="'Courier New',monospace" font-size="13.5" fill="#00D4FF">_</text>
+  <rect class="cursor-bar" x="45" y="418" width="9" height="15" fill="#00D4FF" rx="1"/>
+
+  <!-- ── CORNER ACCENTS ── -->
+  <line x1="2" y1="38" x2="30" y2="38" stroke="#00D4FF" stroke-width="2" opacity="0.6"/>
+  <line x1="770" y1="38" x2="798" y2="38" stroke="#00D4FF" stroke-width="2" opacity="0.6"/>
+  <line x1="2" y1="456" x2="30" y2="456" stroke="#BF5FFF" stroke-width="2" opacity="0.6"/>
+  <line x1="770" y1="456" x2="798" y2="456" stroke="#BF5FFF" stroke-width="2" opacity="0.6"/>
+
+  <!-- Right side status indicators -->
+  <text x="770" y="75" font-family="'Courier New',monospace" font-size="10" fill="#00FF88" opacity="0.7">ON</text>
+  <circle cx="790" cy="70" r="4" fill="#00FF88">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Bottom status bar -->
+  <rect x="2" y="443" width="796" height="13" fill="#0f1a2e" opacity="0.8"/>
+  <text x="15" y="453" font-family="'Courier New',monospace" font-size="9" fill="#00D4FF" opacity="0.7">AKHYMAJEED/terminal</text>
+  <text x="400" y="453" font-family="'Courier New',monospace" font-size="9" fill="#FFD700" opacity="0.7" text-anchor="middle">main ⎇  Tech-X · Tanzania 🇹🇿</text>
+  <text x="785" y="453" font-family="'Courier New',monospace" font-size="9" fill="#00FF88" opacity="0.7" text-anchor="end">LIVE</text>
+</svg>
